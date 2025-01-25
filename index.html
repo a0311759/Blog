@@ -59,16 +59,105 @@
 
         <!-- Topic 2: Python Basics -->
         <div class="topic" id="python-basics">
-            <h2>Introduction to Python</h2>
-            <p>Python is a versatile programming language widely used in web development, data analysis, artificial intelligence, and scientific computing. It is known for its simplicity and readability.</p>
-            <h3>Subtopic: Variables and Data Types</h3>
+    <h2>Introduction to Python</h2>
+    <p>
+        Python is a versatile programming language widely used in web development, 
+        data analysis, artificial intelligence, and scientific computing. It is 
+        known for its simplicity, readability, and a large standard library, 
+        making it an ideal choice for beginners and professionals alike.
+    </p>
+
+    <h3>Why Learn Python?</h3>
+    <ul>
+        <li>Python has a simple syntax, making it easy to learn for beginners.</li>
+        <li>It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</li>
+        <li>It has a vast collection of libraries and frameworks, such as NumPy, Pandas, TensorFlow, and Django.</li>
+        <li>Python is widely used in industries like web development, data science, AI, machine learning, and more.</li>
+    </ul>
+
+    <h3>Subtopic: Variables and Data Types</h3>
+    <p>In Python, variables are used to store data, and they don’t require explicit declaration. Data types are automatically assigned based on the value.</p>
+    <ul>
+        <li><strong>String:</strong> A sequence of characters enclosed in single (' ') or double (" ") quotes. Example:
+            <pre>name = "John Doe"</pre>
+        </li>
+        <li><strong>Integer:</strong> A whole number without a decimal point. Example:
+            <pre>age = 25</pre>
+        </li>
+        <li><strong>Float:</strong> A number with a decimal point. Example:
+            <pre>height = 5.9</pre>
+        </li>
+        <li><strong>List:</strong> An ordered collection of items, which can be of mixed types. Lists are mutable. Example:
+            <pre>fruits = ["apple", "banana", "cherry"]</pre>
+        </li>
+        <li><strong>Tuple:</strong> An ordered collection of items, similar to a list, but immutable. Example:
+            <pre>coordinates = (10, 20, 30)</pre>
+        </li>
+        <li><strong>Dictionary:</strong> A collection of key-value pairs. Example:
+            <pre>person = {"name": "Alice", "age": 30, "city": "New York"}</pre>
+        </li>
+        <li><strong>Boolean:</strong> Represents either <code>True</code> or <code>False</code>. Example:
+            <pre>is_active = True</pre>
+        </li>
+    </ul>
+
+    <h3>Subtopic: Control Flow Statements</h3>
+    <p>Control flow statements allow you to control the execution of code based on conditions or loops.</p>
+    <ul>
+        <li><strong>If-Else:</strong> Used to execute code conditionally. Example:
+            <pre>
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+            </pre>
+        </li>
+        <li><strong>For Loop:</strong> Used to iterate over a sequence (e.g., list, tuple, or string). Example:
+            <pre>
+for fruit in fruits:
+    print(fruit)
+            </pre>
+        </li>
+        <li><strong>While Loop:</strong> Used to execute a block of code repeatedly as long as a condition is true. Example:
+            <pre>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+            </pre>
+        </li>
+    </ul>
+
+    <h3>Subtopic: Functions</h3>
+    <p>Functions are blocks of reusable code that perform a specific task. They are defined using the <code>def</code> keyword.</p>
+    <pre>
+# Example: A function to calculate the square of a number
+def square(num):
+    return num * num
+
+result = square(5)
+print(result)  # Output: 25
+    </pre>
+
+    <h3>Subtopic: Modules and Libraries</h3>
+    <p>Python comes with a rich set of built-in libraries and allows you to use external libraries by importing them.</p>
+    <ul>
+        <li><strong>Built-in Modules:</strong> Examples include <code>math</code>, <code>datetime</code>, and <code>os</code>. Example:
+            <pre>
+import math
+print(math.sqrt(16))  # Output: 4.0
+            </pre>
+        </li>
+        <li><strong>External Libraries:</strong> These need to be installed using a package manager like pip. Examples:
             <ul>
-                <li>String</li>
-                <li>Integer</li>
-                <li>List</li>
-                ...
+                <li><code>NumPy</code>: Used for numerical computations.</li>
+                <li><code>Pandas</code>: Used for data manipulation and analysis.</li>
+                <li><code>Matplotlib</code>: Used for data visualization.</li>
             </ul>
-        </div>
+        </li>
+    </ul>
+</div>
+
 
         <!-- Topic 3: Web Development -->
         <div class="topic" id="web-development">
@@ -96,6 +185,6 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    
 </body>
 </html>
