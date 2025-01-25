@@ -7,6 +7,16 @@
     
 </head>
 <body>
+    <!-- Search Bar -->
+<div id="search-container">
+  <input
+    type="text"
+    id="search-bar"
+    placeholder="Search topics..."
+    onkeyup="searchTopics()"
+  />
+</div>
+    
     <h1>Blog</h1>
     <div class="content">
         <!-- Topic 1: Unix Commands -->
@@ -276,6 +286,26 @@ document.querySelector("button").addEventListener("click", function() {
 </div>
 
     </div>
+
+    <script>
+
+        function searchTopics() {
+  const input = document.getElementById("search-bar").value.toLowerCase();
+  const blogPosts = document.querySelectorAll(".blog-post");
+
+  blogPosts.forEach((post) => {
+    const title = post.querySelector(".post-title").textContent.toLowerCase();
+    const content = post.querySelector(".post-content").textContent.toLowerCase();
+
+    if (title.includes(input) || content.includes(input)) {
+      post.style.display = "block";
+    } else {
+      post.style.display = "none";
+    }
+  });
+        }
+        
+    </script>
 
     
 </body>
